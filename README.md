@@ -11,7 +11,7 @@ I grabbed Fatima's example image from her website, and it should be noted that h
 We know that the image has better contrast and well defined features the further from the center we travel. So, let's first find the center. To do so, we can look at our image and see that the vertical and horizontal lines traveling through the image center will have most of their respective pixels colored black. In an 8bit (256 byte) greyscale image, black is 0, white is 255, and everything else are shades of grey. So, if we look at the the summation of every individual row and column of the image, our lowest value in each would yield us the x and y pixel values denoting the center. If we look at every row, we find:
 
 <p align="center">
-    <img src="img/sum_row.bmp" alt="Description" width="400">
+    <img src="img/sum_row.png" alt="Description" width="400">
 </p>
 
 Here we find our x component of the center as being row 345.
@@ -19,7 +19,7 @@ Here we find our x component of the center as being row 345.
 If we look at every column, we find:
 
 <p align="center">
-    <img src="img/sum_column.bmp" alt="Description" width="400">
+    <img src="img/sum_column.png" alt="Description" width="400">
 </p>
 
 Here we find our x component of the center as being row 335. It is important to note that a 2D pixel array will have the topleft corner have (row, column) indices as (0,0) and bottom right corner as (max row, max column) which in our case is (648,652).
